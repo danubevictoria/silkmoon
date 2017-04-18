@@ -227,7 +227,7 @@ fieldset[disabled] .btn-xl.active {
 }
 header {
   background-image: url('../img/silkmoonbg.jpg');
-  background: background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/silkmoonbg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/silkmoonbg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -257,9 +257,7 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
-div.address {
-  font-size: 18px;
-}
+
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
@@ -279,6 +277,12 @@ div.address {
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
+    letter-spacing: 6px;
+  }
+  header .intro-heading.address {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 10px;
   }
 }
 section {
@@ -315,6 +319,8 @@ section h3.section-subheading {
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+      height: 350px;
+    overflow: hidden;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
@@ -345,6 +351,10 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
+}
+#portfolio .portfolio-item .portfolio-link .img-responsive {
+  min-width: 100%;
+  min-height: 100%;
 }
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
